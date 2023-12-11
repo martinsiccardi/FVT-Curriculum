@@ -5,226 +5,221 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Franco Siccardi - Curriculum</title>
   <style>
-    header {
-    background-color: #3498db; /* Color de fondo azul */
-    color: #fff; /* Texto blanco */
-    padding: 40px 20px; /* Espaciado interno */
-    text-align: center;
-    font-family: 'Arial', 'Helvetica', sans-serif;
-}
-
-.header-text {
-    font-size: 36px; /* Tamaño grande del texto */
-    font-weight: bold; /* Negrita para mayor énfasis */
-    text-transform: uppercase; /* Convertir el texto a mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
-    margin-bottom: 10px; /* Espaciado inferior */
-}
-
-.header-subtext {
-    font-size: 18px; /* Tamaño del subtexto */
-    font-style: italic; /* Estilo cursiva para un toque futurista */
-    opacity: 0.8; /* Reducir la opacidad para un aspecto más sutil */
-}
-
     body {
-      font-family: Arial, sans-serif;
+      background-color: #f9f5f2;
+      color: #333;
+      font-family: 'Arial', 'Helvetica', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
 
     header {
-      background-color: #007BFF;
+      background-color: #f39c12;
       color: #fff;
+      padding: 40px 20px;
       text-align: center;
-      padding: 1em 0;
     }
 
-    header h1 {
-      font-size: 2em;
-      margin: 0;
+    .header-text {
+      font-size: 36px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
     }
 
-    header p {
-      margin: 0;
+    .header-subtext {
+      font-size: 18px;
+      font-style: italic;
+      opacity: 0.8;
     }
 
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 20px auto;
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
       padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    h1, h2 {
-      color: #007BFF;
+    .section {
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-section {
+      float: left;
+      width: 40%; /* Ajuste del ancho de la sección */
+      margin-right: 5%;
+    }
+
+    .right-section {
+      float: right;
+      width: 40%; /* Ajuste del ancho de la sección */
+      margin-left: 5%;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    h2, h3 {
+      color: #e74c3c;
     }
 
     h3 {
-      border-bottom: 2px solid #007BFF;
-      padding-bottom: 5px;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 8px;
+      margin-top: 20px;
     }
 
     p {
-      margin: 10px 0;
+      line-height: 1.6;
     }
 
     footer {
-    background-color: #2c3e50; /* Color de fondo más atractivo */
-    color: #ecf0f1; /* Texto blanco */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Centrar verticalmente los elementos */
-    text-align: left;
-    font-family: 'Arial', 'Helvetica', sans-serif;
-}
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 10px; /* Ajuste del padding */
+      text-align: center;
+      clear: both;
+    }
 
-.logo {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
+    .logo img {
+      max-width: 60px; /* Ajuste del tamaño del logo */
+      margin-right: 10px;
+    }
 
-.logo img {
-    max-width: 80px; /* Aumentar un poco el tamaño del logo */
-    margin-right: 10px;
-}
+    .left img {
+      max-width: 24px;
+      margin-right: 12px;
+    }
 
-.left img {
-    max-width: 24px; /* Reducir el tamaño de la imagen izquierda */
-    margin-right: 12px; /* Ajustar el espacio entre la imagen y el texto */
-}
+    .center-content {
+      flex: 5;
+      text-align: center;
+    }
 
-.center-content {
-    flex: 5; /* Reducir el tamaño del contenido central */
-    text-align: center;
-}
+    .right-content {
+      flex: 1;
+      text-align: right;
+    }
 
-.right-content {
-    flex: 1; /* Mantener el tamaño del contenedor derecho */
-    text-align: right;
-}
+    .contact-info {
+      margin-top: 10px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
 
-.contact-info {
-    margin-top: 10px;
-    font-size: 14px;
-    opacity: 0.8; /* Reducir la opacidad para un aspecto más sutil */
-}
+    .full-width {
+      width: 100%;
+      margin-bottom: 20px; /* Ajuste del margen inferior */
+    }
 
-</style>
-
+    .full-width img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-      <div class="header-text">Curriculum Vitae</div>
-      <div class="header-subtext">¡Descubre mi trayectoria profesional!</div>
+  <header>
+    <div class="header-text">Curriculum Vitae</div>
+    <div class="header-subtext">¡Descubre mi trayectoria profesional!</div>
   </header>
 
   <main>
 
-    <section>
-      <h2>Resumen profesional</h2>
-      <p>Soy un Empleado dispuesto a generar cambios en su industria, pero con poca experiencia laboral. Me destaco por la facilidad que tengo al realizar trabajos grupales y he logrado tener relaciones muy productivas en trabajos escolares. Busco oportunidades que me permitan desarrollar habilidades que me puedan brindar un mejor futuro laboral.</p>
-    </section>
+    <div class="container">
 
-    <section>
-      <h2>Experiencia laboral</h2>
-      <h3>Aplicacion Web Bomberos</h3>
-      <p><strong>Organización:</strong> Aplicacion Web Bomberos La Falda</p>
-      <ul>
-        <li>En esta tarea estaba encargado de la realización decorativa y estructural de sus páginas secundarias, como la tabla de registros o de inventario.</li>
-        <li>Brindar una buena sociabilización entre el grupo de trabajo.</li>
-      </ul>
-    </section>
+      <div class="section left-section">
+        <h2>Resumen profesional</h2>
+        <p>Soy un Empleado dispuesto a generar cambios en su industria, pero con poca experiencia laboral. Me destaco por la facilidad que tengo al realizar trabajos grupales y he logrado tener relaciones muy productivas en trabajos escolares. Busco oportunidades que me permitan desarrollar habilidades que me puedan brindar un mejor futuro laboral.</p>
+      </div>
+      <div class="full-width">
+        <img src="" alt="Imagen 1">
+      </div>
 
-    <section>
-      <h2>Educación</h2>
-      <h2>Titulos a conseguir</h2>
-      <h3>Desarrollador de software con énfasis en TICS</h3>
-      <p><strong>Institución:</strong> PRoA La Falda</p>
-      <p><strong>Año de Graduación:</strong> 2024</p>
-      <br>
-      <h3>Desarrollador Full-Stack</h3>
-      <p><strong>Institución:</strong> Instituto Superior Politécnico de Córdoba</p>
-      <p><strong>Año de Graduación:</strong> 2024</p>
-      <br>
-      <h3>Certificación en Metodologías Scrum</h3>
-      <p><strong>Institución:</strong> PRoA La Falda</p>
-      <p><strong>Año de Graduación:</strong> 2024</p>
-    </section>
+      <div class="section right-section">
+        <h2>Experiencia laboral</h2>
+        <h3>Aplicacion Web Bomberos</h3>
+        <p><strong>Organización:</strong> Aplicacion Web Bomberos La Falda</p>
+        <ul>
+          <li>En esta tarea estaba encargado de la realización decorativa y estructural de sus páginas secundarias, como la tabla de registros o de inventario.</li>
+          <li>Brindar una buena sociabilización entre el grupo de trabajo.</li>
+        </ul>
+      </div>
+      <div class="full-width">
+        <img src="imagen2.jpg" alt="Imagen 2">
+      </div>
 
-    <section>
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Facil sociabilizacion con el grupo</li>
-        <li>Cumplimiento de tareas a la hora del trabajo grupal</li>
-      </ul>
-    </section>
+      <div class="clear"></div>
 
-    <section>
-      <h2>Extracurricular</h2>
-      <ul>
-        <li>Mi pasatiempo principal es utilizar la computadora para videojuegos</li>
-        <li>Me gusta jugar al básquetbol con amigos</li>
-        <li>Me agrada hacer ejercicio físico </li>
-      </ul>
-    </section>
+      <div class="section left-section">
+        <h2>Educación</h2>
+        <h3>Desarrollador de software con énfasis en TICS</h3>
+        <p><strong>Institución:</strong> PRoA La Falda</p>
+        <p><strong>Año de Graduación:</strong> 2024</p>
+      </div>
+      <div class="full-width">
+        <img src="imagen3.jpg" alt="Imagen 3">
+      </div>
+
+      <div class="section right-section">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>Facil sociabilizacion con el grupo</li>
+          <li>Cumplimiento de tareas a la hora del trabajo grupal</li>
+        </ul>
+      </div>
+      <div class="full-width">
+        <img src="imagen4.jpg" alt="Imagen 4">
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="section left-section">
+        <h2>Extracurricular</h2>
+        <ul>
+          <li>Mi pasatiempo principal es utilizar la computadora para videojuegos</li>
+          <li>Me gusta jugar al básquetbol con amigos</li>
+          <li>Me agrada hacer ejercicio físico </li>
+        </ul>
+      </div>
+      <div class="full-width">
+        <img src="imagen5.jpg" alt="Imagen 5">
+      </div>
+
+    </div>
 
   </main>
+
   <footer>
-        <img src=".png" alt="Logo">
-        Franco <br>
-        Siccardi<br>
-        La Falda
+    <div class="logo">
+      <img src=".png" alt="Logo">
     </div>
     <div class="center-content">
-        <br>
-        Valle Hermoso<br>
-        Córdoba, Argentina
-        <div class="contact-info">
-            Telefono: 353 563 1574
-        </div>
+      <br>
+      Valle Hermoso<br>
+      Córdoba, Argentina
+      <div class="contact-info">
+        Telefono: 353 563 1574
+      </div>
     </div>
     <div class="right-content">
-        PRoA La Falda © 2023<br>
-        <br>
-        fmsiccardi@escuelasproa.edu.ar<br>
-        <br>
-        Redes Sociales
-        <div class="left">
-
-            </a>
-            <a href="https://www.instagram.com/fran.siccardi/">
-            <img src="\assets\img\Instagramlogo.png">
-            </a>
-        </div>
+      PRoA La Falda © 2023<br>
+      <br>
+      fmsiccardi@escuelasproa.edu.ar<br>
+      <br>
+      Redes Sociales
+      <div class="left">
+        <a href="https://www.instagram.com/fran.siccardi/">
+          <img src="\assets\img\Instagramlogo.png">
+        </a>
+      </div>
     </div>
-</footer>
+  </footer>
 
 </body>
 </html>
-
-
